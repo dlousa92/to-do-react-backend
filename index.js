@@ -1,7 +1,9 @@
+
 const express = require('express')
 const parser = require('body-parser')
-const mongoose = require('mongoose')
+const mongoose = require('./db/Item')
 const cors = require('cors')
+const Item = mongoose.model('Item')
 
 const app = express()
 
